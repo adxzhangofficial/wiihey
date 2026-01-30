@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import SectionTitle from '../common/SectionTitle';
 import { productCategories } from '../../data/products';
+import { getImagePath } from '../../config';
 
 export default function ProductsPreview() {
   return (
@@ -28,7 +29,7 @@ export default function ProductsPreview() {
               >
                 <div className="aspect-square overflow-hidden bg-gray-100">
                   <img
-                    src={category.image}
+                    src={getImagePath(category.image)}
                     alt={category.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"

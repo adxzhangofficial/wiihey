@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import SectionTitle from '../common/SectionTitle';
 import { solutions } from '../../data/solutions';
+import { getImagePath } from '../../config';
 
 export default function SolutionsPreview() {
   const featuredSolutions = solutions.slice(0, 6);
@@ -31,7 +32,7 @@ export default function SolutionsPreview() {
               >
                 <div className="aspect-video overflow-hidden">
                   <img
-                    src={solution.coverImage}
+                    src={getImagePath(solution.coverImage)}
                     alt={solution.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
