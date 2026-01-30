@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 import type { RouteObject } from 'react-router-dom';
 import App from './App';
 
@@ -43,4 +43,5 @@ const routes: RouteObject[] = [
   },
 ];
 
-export const router = createBrowserRouter(routes);
+// Use HashRouter for GitHub Pages compatibility
+export const router = createHashRouter(routes);
