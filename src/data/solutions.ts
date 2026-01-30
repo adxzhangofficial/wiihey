@@ -1,0 +1,230 @@
+export interface Solution {
+  id: string;
+  name: string;
+  shortDesc: string;
+  fullDesc: string;
+  coverImage: string;
+  features: string[];
+  applications?: string[];
+}
+
+export const solutions: Solution[] = [
+  {
+    id: 'openharmony',
+    name: '开源鸿蒙解决方案',
+    shortDesc: '基于开源鸿蒙系统的物联网解决方案',
+    fullDesc: '充分利用开源鸿蒙系统的开放性和灵活性，为物联网应用提供完整的系统级解决方案，支持多种硬件平台和应用场景。',
+    coverImage: '/images/solutions/openharmony/image101.png',
+    features: [
+      '开源开放',
+      '跨平台支持',
+      '高效能',
+      '安全可靠',
+      '易于集成',
+    ],
+    applications: [
+      '物联网设备',
+      '边缘计算',
+      '智能控制',
+    ],
+  },
+  {
+    id: 'smart-manhole',
+    name: '鸿蒙智能井盖解决方案',
+    shortDesc: '基于鸿蒙系统的智能井盖监测方案',
+    fullDesc: '整合鸿蒙系统优势，实现井盖的智能化监测、预警和管理，提高城市基础设施的安全性和管理效率。',
+    coverImage: '/images/solutions/smart-manhole/image156.png',
+    features: [
+      '实时监测',
+      '智能告警',
+      '远程管理',
+      '数据分析',
+      '可视化展示',
+    ],
+    applications: [
+      '城市管网',
+      '地下设施',
+      '安全监测',
+    ],
+  },
+  {
+    id: 'tunnel',
+    name: '隧道积水监测解决方案',
+    shortDesc: '隧道内积水实时监测和预警系统',
+    fullDesc: '通过分布式水位传感器和智能控制系统，实现隧道内积水的实时监测、预警和应急处置，确保隧道运营安全。',
+    coverImage: '/images/solutions/tunnel/image189.png',
+    features: [
+      '实时水位监测',
+      '多点布置',
+      '智能预警',
+      '数据记录',
+      '应急联动',
+    ],
+    applications: [
+      '公路隧道',
+      '铁路隧道',
+      '地铁隧道',
+      '地下通道',
+    ],
+  },
+  {
+    id: 'slope',
+    name: '边坡安全监测解决方案',
+    shortDesc: '边坡稳定性实时监测预警系统',
+    fullDesc: '采用多种传感器技术，对边坡的位移、应变、孔隙水压等关键参数进行实时监测，及时预警潜在的滑坡风险。',
+    coverImage: '/images/solutions/slope/image226.png',
+    features: [
+      '多参数监测',
+      '高精度测量',
+      '实时预警',
+      '数据分析',
+      '风险评估',
+    ],
+    applications: [
+      '公路边坡',
+      '铁路边坡',
+      '矿山边坡',
+      '水利边坡',
+    ],
+  },
+  {
+    id: 'bridge',
+    name: '桥梁安全监测解决方案',
+    shortDesc: '桥梁结构健康监测系统',
+    fullDesc: '对桥梁的应变、位移、倾斜等结构参数进行全面监测，实时掌握桥梁健康状态，指导维护和加固工作。',
+    coverImage: '/images/solutions/bridge/image247.png',
+    features: [
+      '结构监测',
+      '应变测量',
+      '位移监测',
+      '倾斜监测',
+      '健康评估',
+    ],
+    applications: [
+      '公路桥梁',
+      '铁路桥梁',
+      '城市桥梁',
+      '特大桥梁',
+    ],
+  },
+  {
+    id: 'confined-space',
+    name: '有限空间安全解决方案',
+    shortDesc: '有限空间作业安全监测预警系统',
+    fullDesc: '对有限空间内的气体浓度、温度、湿度等环境参数进行实时监测，及时预警危险气体和不安全条件。',
+    coverImage: '/images/solutions/confined-space/image261.png',
+    features: [
+      '气体监测',
+      '环境参数',
+      '实时预警',
+      '人员定位',
+      '应急联动',
+    ],
+    applications: [
+      '地下管道',
+      '地下室',
+      '储罐',
+      '井下作业',
+    ],
+  },
+  {
+    id: 'water-service',
+    name: '鸿蒙智慧水务解决方案',
+    shortDesc: '基于鸿蒙系统的智慧水务管理平台',
+    fullDesc: '整合供水、排水、污水处理等各环节，实现水务系统的智能化管理、优化运营和科学决策。',
+    coverImage: '/images/solutions/water-service/image290.png',
+    features: [
+      '供水管理',
+      '排水监测',
+      '污水处理',
+      '数据分析',
+      '智能调度',
+    ],
+    applications: [
+      '城市供水',
+      '污水处理',
+      '雨水管理',
+      '水质监测',
+    ],
+  },
+  {
+    id: 'water-resources',
+    name: '鸿蒙智慧水利解决方案',
+    shortDesc: '基于鸿蒙系统的智慧水利管理方案',
+    fullDesc: '对水利工程的水位、流量、降雨等参数进行全面监测，支持水资源的科学管理和防灾减灾。',
+    coverImage: '/images/solutions/water-resources/image350.png',
+    features: [
+      '水位监测',
+      '流量测量',
+      '降雨监测',
+      '防洪预警',
+      '水资源管理',
+    ],
+    applications: [
+      '水库管理',
+      '河道监测',
+      '防洪预警',
+      '灌溉管理',
+    ],
+  },
+  {
+    id: 'construction',
+    name: '工程建筑安全解决方案',
+    shortDesc: '建筑工程施工安全监测系统',
+    fullDesc: '对建筑工程的沉降、倾斜、应变等参数进行实时监测，确保施工安全和工程质量。',
+    coverImage: '/images/solutions/construction/image388.jpg',
+    features: [
+      '沉降监测',
+      '倾斜监测',
+      '应变测量',
+      '安全预警',
+      '质量控制',
+    ],
+    applications: [
+      '高层建筑',
+      '地下工程',
+      '基础施工',
+      '边坡支护',
+    ],
+  },
+  {
+    id: 'datacenter',
+    name: '机房动环监控解决方案',
+    shortDesc: '数据中心机房环境监控系统',
+    fullDesc: '对机房的温度、湿度、电力、安全等环境参数进行全面监测，保障数据中心的稳定运行。',
+    coverImage: '/images/solutions/datacenter/image399.jpg',
+    features: [
+      '温度监测',
+      '湿度监测',
+      '电力监测',
+      '安全告警',
+      '远程管理',
+    ],
+    applications: [
+      '数据中心',
+      '服务器机房',
+      '通信机房',
+      '电力机房',
+    ],
+  },
+  {
+    id: 'geological',
+    name: '地质灾害监测解决方案',
+    shortDesc: '地质灾害实时监测预警系统',
+    fullDesc: '对滑坡、泥石流、地面沉降等地质灾害进行实时监测，及时预警和防范地质灾害风险。',
+    coverImage: '/images/solutions/geological/image445.png',
+    features: [
+      '位移监测',
+      '应变测量',
+      '孔隙水压',
+      '实时预警',
+      '风险评估',
+    ],
+    applications: [
+      '滑坡监测',
+      '泥石流预警',
+      '地面沉降',
+      '地裂缝监测',
+    ],
+  },
+];
