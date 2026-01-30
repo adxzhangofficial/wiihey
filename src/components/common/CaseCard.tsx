@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import { getImagePath } from '../../config';
 
 interface CaseCardProps {
   image: string;
@@ -9,6 +10,7 @@ interface CaseCardProps {
 
 export default function CaseCard({ image, title }: CaseCardProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const imagePath = getImagePath(image);
 
   return (
     <>
@@ -19,7 +21,7 @@ export default function CaseCard({ image, title }: CaseCardProps) {
       >
         <div className="aspect-[4/3] overflow-hidden">
           <img
-            src={image}
+            src={imagePath}
             alt={title}
             className="w-full h-full object-cover"
             loading="lazy"
@@ -56,7 +58,7 @@ export default function CaseCard({ image, title }: CaseCardProps) {
                 <X size={32} />
               </button>
               <img
-                src={image}
+                src={imagePath}
                 alt={title}
                 className="max-w-full max-h-[80vh] object-contain rounded-lg"
               />

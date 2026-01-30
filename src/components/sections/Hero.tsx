@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import Button from '../common/Button';
+import { getImagePath } from '../../config';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="/images/hero/image1.jpeg"
+          src={getImagePath('/images/hero/image1.jpeg')}
           alt="WiiHey Technology"
           className="w-full h-full object-cover"
         />

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import SectionTitle from '../components/common/SectionTitle';
 import { solutions } from '../data/solutions';
+import { getImagePath } from '../config';
 
 export default function Solutions() {
   return (
@@ -40,7 +41,7 @@ export default function Solutions() {
                 >
                   <div className="aspect-video overflow-hidden bg-gray-100">
                     <img
-                      src={solution.coverImage}
+                      src={getImagePath(solution.coverImage)}
                       alt={solution.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

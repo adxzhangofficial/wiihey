@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { getImagePath } from '../../config';
 
 interface ProductCardProps {
   name: string;
@@ -18,7 +19,7 @@ export default function ProductCard({ name, description, image, category }: Prod
       <Link to={`/products/${category}`}>
         <div className="aspect-[4/3] overflow-hidden bg-gray-100">
           <img
-            src={image}
+            src={getImagePath(image)}
             alt={name}
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             loading="lazy"

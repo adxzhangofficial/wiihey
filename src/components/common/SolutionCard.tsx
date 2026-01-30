@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { getImagePath } from '../../config';
 
 interface SolutionCardProps {
   id: string;
@@ -18,7 +19,7 @@ export default function SolutionCard({ id, name, shortDesc, coverImage }: Soluti
       <Link to={`/solutions/${id}`}>
         <div className="relative aspect-video overflow-hidden">
           <img
-            src={coverImage}
+            src={getImagePath(coverImage)}
             alt={name}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"

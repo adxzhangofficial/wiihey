@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { getImagePath } from '../../config';
 
 const quickLinks = [
   { path: '/products', label: '产品中心' },
@@ -23,7 +24,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
               <img
-                src="/images/logo/image7.png"
+                src={getImagePath('/images/logo/image7.png')}
                 alt="WiiHey Logo"
                 className="h-10 w-auto brightness-0 invert"
               />

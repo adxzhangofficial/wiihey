@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Check } from 'lucide-react';
 import SectionTitle from '../components/common/SectionTitle';
 import { products, productCategories, type ProductCategory } from '../data/products';
+import { getImagePath } from '../config';
 
 export default function ProductCategoryPage() {
   const { category } = useParams<{ category: string }>();
@@ -54,7 +55,7 @@ export default function ProductCategoryPage() {
               >
                 <div className="aspect-square overflow-hidden bg-white-100">
                   <img
-                    src={product.image}
+                    src={getImagePath(product.image)}
                     alt={product.name}
                     className="w-full h-full object-contain"
                   />

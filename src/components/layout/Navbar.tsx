@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getImagePath } from '../../config';
 
 const navItems = [
   { path: '/', label: '首页' },
@@ -36,7 +37,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/images/logo/image7.png"
+              src={getImagePath('/images/logo/image7.png')}
               alt="WiiHey Logo"
               className="h-10 md:h-12 w-auto"
             />

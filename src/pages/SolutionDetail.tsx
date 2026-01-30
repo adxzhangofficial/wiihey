@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronRight, Check, ArrowLeft } from 'lucide-react';
 import { solutions } from '../data/solutions';
+import { getImagePath } from '../config';
 
 export default function SolutionDetail() {
   const { id } = useParams<{ id: string }>();
@@ -45,7 +46,7 @@ export default function SolutionDetail() {
               viewport={{ once: true }}
             >
               <img
-                src={solution.coverImage}
+                src={getImagePath(solution.coverImage)}
                 alt={solution.name}
                 className="rounded-xl shadow-lg w-full"
               />

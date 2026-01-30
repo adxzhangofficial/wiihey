@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Award, Users, Building2, Lightbulb, Shield, Zap } from 'lucide-react';
 import SectionTitle from '../components/common/SectionTitle';
+import { getImagePath } from '../config';
 
 const values = [
   { icon: Lightbulb, title: '超越自我', desc: 'Beyond Self' },
@@ -69,7 +70,7 @@ export default function About() {
               className="relative"
             >
               <img
-                src="/images/about/image10.png"
+                src={getImagePath('/images/about/image10.png')}
                 alt="威惠智能"
                 className="rounded-xl"
               />
